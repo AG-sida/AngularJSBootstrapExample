@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html id="HtmlElement" class "no-js" lang="sv-SE">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="content-type" content="text/html; charset=UTF-8" />
+
+<!--define angular app -->
+<html data-ng-app="setUpApp">
+<!-- Header-->
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Template</title>
+
+
+    <!-- Latest js -->
+    <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<!-- HEADER AND NAVBAR -->
+<body>
+    <nav class="navBar">
+        <nav class="wrapper">
+            <div class="logo"></div>
+            <!-- Logo -->
+            
+            <ul>
+                <li class=""><a href="#/welcome"><i class=""></i> Welcome</a></li>
+                <li><a href="#/view1"><i class=""></i> View 1</a></li>
+                <li><a href="#/view2"><i class=""></i> View 2</a></li>
+            </ul>
+            
+        </nav>
+    </nav>
+
+    <div data-ng-view="homeController">
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        < id="main">
+            <br><br><br><br>
+            <h3 style="text-align:left"> {{ message }} </h3>
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div data-ng-view=</div>
+                <div data-ng-view="view1Controller">
+                    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                    < id="main2">
+                        <br><br><br><br>
+                        <h3 style="text-align:left"> {{ message }} </h3>
+                        <!-- angular templating -->
+                        <!-- this is where content will be injected -->
+                        <div data-ng-view=</div>
+                        </div>
+                        <div data-ng-view="view2Controller">
+
+                            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                            < id="main3">
+                                <br><br><br><br>
+                                <h3 style="text-align:left"> {{ message }} </h3>
+                                <!-- angular templating -->
+                                <!-- this is where content will be injected -->
+                                <div data-ng-view=</div>
+
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- Footer section -->
+
+    <footer>
+        <p>Contact information: <a href="mailto:leonardoe.lazcano@gmail.com">leonardoe.lazcano@gmail.com</a>.</p>
+    </footer>
+
+</body>
+
+</html>
